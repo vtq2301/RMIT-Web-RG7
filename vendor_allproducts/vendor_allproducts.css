@@ -1,3 +1,4 @@
+/* Reset Styles */
 * {
 	margin: 0;
 	padding: 0;
@@ -27,7 +28,7 @@
   }
   
 /* Header Styles */
-  header {
+header {
 	position: sticky;
 	background-color: #fff;
 	border-bottom: 1px solid #007bff;
@@ -59,51 +60,83 @@
   nav li:first-child {
 	margin-left: 0;
   }
-  	
-  nav a.btn {
+  
+  header nav li a{
+    color: #007bff;
+    font-size: x-large;
+  }
+
+  /* Shop Name Styles */
+  .shop-name {
+	background-color: #f9f9f9;
+	padding: 80px 0;
+  }
+  
+  .shop-name-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+
+  .shop-name-content .profile-picture {
+    font-size: 150px;
+  }
+
+  .shop-name a.btn {
 	background-color: #007bff;
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 20px;
   }
-  nav a.btnl{
-	background-color: #00ff1e;
-	color: #fff;
-	padding: 10px 20px;
-	border-radius: 20px;
-  }
-  nav a.btn:hover,
-  nav a.btnl:hover{
-	opacity: 0.5;
-  }
-  
-  
-  /* Login Box Styles */
-  .login-box {
-	background-color: #f9f9f9;
-	padding: 80px 0;
-	display: flex;
-	justify-content: center;
-  }
 
-  .login-content {
-	background-color: rgb(225, 231, 236);
-	padding: 30px 50px;
+  /* Product Styles */
+  .products {
+	padding: 80px 0;
   }
   
-  .login-box h1 {
+  .products h2 {
 	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 40px;
+  }
+  
+  .product-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
+  .product {
+	width: 30%;
+	margin-bottom: 40px;
+	text-align: center;
+	border: 1px solid #ddd;
+	padding: 20px;
+	transition: all 0.3s ease;
+  }
+  
+  .product:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	transform: translateY(-5px);
+  }
+  
+  .product img {
+	width: 100%;
+	margin-bottom: 20px;
+  }
+  
+  .product h3 {
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-bottom: 10px;
+  }
+  
+  .product p.price {
+	font-size: 1.2rem;
 	font-weight: 700;
 	margin-bottom: 20px;
   }
- 
-  .login-box a.btn {
-	background-color: #007bff;
-	color: #fff;
-	padding: 10px 20px;
-	border-radius: 20px;
-  }
-  
+
   /* Footer Styles */
   footer {
 	background-color: #f9f9f9;

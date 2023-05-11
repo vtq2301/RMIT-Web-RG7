@@ -1,7 +1,11 @@
+<!-- 
+header after login
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Homepage</title>
+    <title>Login</title>
     <link rel="stylesheet" href="login.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,75 +17,25 @@
         <nav>
           <a href="#" class="logo"><img src="https://www.pearlwhitemedia.com/wp-content/uploads/2017/11/e-commerce.png" alt=""> ShoppeeFake</a>
           <ul>
-            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-            <li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="btnl">Login</a></li>
+            <li><a href="#" class="btn">Register</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- Banner -->
-    <div class="banner">
-      <img src="banner-placeholder.jpg" alt="Banner Image">
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Login Box -->
+    <section class="login-box">
       <div class="container">
-        <div class="hero-content">
-          <h1>Welcome to My Shop</h1>
-          <p>Find everything you need in one place</p>
-          <a href="#" class="btn">Shop Now</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Products -->
-    <section class="products">
-      <div class="container">
-        <h2>Our Products</h2>
-        <div class="product-list">
-          <div class="product">
-            <img src="product-placeholder.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <p class="price">$19.99</p>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-          <div class="product">
-            <img src="product-placeholder.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <p class="price">$19.99</p>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-          <div class="product">
-            <img src="product-placeholder.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <p class="price">$19.99</p>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-          <div class="product">
-            <img src="product-placeholder.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <p class="price">$19.99</p>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-          <div class="product">
-            <img src="product-placeholder.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <p class="price">$19.99</p>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-          <div class="product">
-            <img src="product-placeholder.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <p class="price">$19.99</p>
-            <a href="#" class="btn">Add to Cart</a>
-          </div>
-        </div>
-        <div class="pagination">
-          <a href="#" class="active">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
+        <div class="login-content">
+          <h1>Login to Your Account</h1>
+          <form action="" method="post">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username"required><br><br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required><br><br>
+            <a href="" class="btn">Submit</a>
+          </form>
         </div>
       </div>
     </section>
