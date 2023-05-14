@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/vtq2301/RMIT-Web-RG7/issues"
   },
-  "homepage": "https://github.com/vtq2301/RMIT-Web-RG7#readme"
+  "homepage": "https://github.com/vtq2301/RMIT-Web-RG7#readme",
+  "dependencies": {
+    "ejs": "^3.1.9"
+  }
 }

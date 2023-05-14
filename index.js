@@ -1,3 +1,14 @@
+const ejs = require('ejs');
+
+app.set('view engine', 'ejs');
+
+app.get('/', (req, res) => {
+  let title = 'Home';
+  let message = '';
+  res.render('welcome', { title, message });
+}
+);
+
 function startTime() {
     const today = new Date();
     let h = today.getHours();
@@ -13,3 +24,5 @@ function startTime() {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
   }
+
+  "But"
