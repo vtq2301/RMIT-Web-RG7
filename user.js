@@ -81,6 +81,5 @@ app.post('/register_customer', (req, res) => {
   const user = new User(req.body);
   
   })
-})
 
 
