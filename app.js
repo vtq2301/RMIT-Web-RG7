@@ -1,13 +1,22 @@
 const ejs = require('ejs');
+const express = require('express')
+const app = express()
+const port = 3000
 
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
   let title = 'Home';
-  let message = '';
+  let message = 'Welcome to our website!';
   res.render('welcome', { title, message });
 }
 );
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`)
+})
+
+app.use(express.static('public'))
 
 function startTime() {
     const today = new Date();
