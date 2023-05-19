@@ -67,16 +67,11 @@
 	padding: 10px 20px;
 	border-radius: 20px;
   }
-  nav a.btnl{
-	background-color: #00ff1e;
-	color: #fff;
-	padding: 10px 20px;
-	border-radius: 20px;
-  }
-  nav a.btn:hover,
-  nav a.btnl:hover{
+
+  nav a.btn:hover {
 	opacity: 0.5;
   }
+
   /* Banner Styles */
   .banner img {
 	width: 100%;
@@ -94,8 +89,12 @@
   footer nav {
 	display: flex;
 	justify-content: center;
+	align-items: content;
   }
-  
+  footer nav li{
+	font-size: larger;
+	
+  }
   .back-to-top {
 	margin-bottom: 20px;
 	background-color: rgba(134, 141, 145, 0.473);

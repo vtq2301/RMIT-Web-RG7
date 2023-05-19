@@ -30,7 +30,7 @@
   /* Header Styles */
   header {
 	position: sticky;
-	background-color: #fff;
+	background-color: rgb(255, 255, 255);
 	border-bottom: 1px solid #007bff;
 	padding: 20px 0;
   }
@@ -68,22 +68,44 @@
   }
 
   nav a.btn:hover {
-	opacity: 0.3;
+	opacity: 0.5;
   }
 
-  /* Banner Styles */
-  .banner img {
-	width: 100%;
+  /* My Account Information */
+  section{
+	display: flex;
+	justify-content: center;
   }
-  
-  /* Customer Registration Styles */
-
-
-  .customer-registration-box {
-	text-align: center;
-	background-color: #b9e7af;
+  .my-account-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    padding: 30px 20px;
+    width: fit-content;
+    background-color: #b1c9e2;
   }
-  
+
+  .my-account-box h3 {
+    margin-bottom: 30px;
+  }
+
+  .my-account-box p {
+    margin-left: 40px;
+  }
+
+  .label {
+    margin-left: 0;
+    font-weight: 450;
+  }
+
+  .static-username,
+  .static-fullname,
+  .static-address {
+    display: flex;
+  }
+
   /* Footer Styles */
   footer {
 	background-color: #f9f9f9;
@@ -112,3 +134,6 @@
 	padding: 15px 0;
 	color: white;
   }
+
+  
+  

@@ -60,7 +60,6 @@
   nav li:first-child {
 	margin-left: 0;
   }
-  	
   nav a.btn {
 	background-color: #007bff;
 	color: #fff;
@@ -75,33 +74,83 @@
   }
   nav a.btn:hover,
   nav a.btnl:hover{
-	opacity: 0.5;
+	opacity: 0.3;
   }
  
   /* User Registration Styles */
   .user-registration {
 	background-color: #fffdfdd6;
-	padding: 80px 0;
   }
-  
-  .hero h1 {
-	font-size: 3rem;
-	font-weight: 700;
-	margin-bottom: 20px;
-  }
-  
-  .hero p {
-	font-size: 1.2rem;
-	margin-bottom: 40px;
-  }
-  
-  .hero a.btn {
+
+  .registration-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: #007bff;
-	color: #fff;
-	padding: 10px 20px;
+	padding: 50px;
+	margin: 60px auto;
+	width: 700px;
 	border-radius: 20px;
   }
-  
+
+  .registration-box h2 {
+	color: white;
+	font-weight: bolder;
+	font-size: 1.4rem;
+  }
+
+  .registration-box h3 {
+	color: rgba(255, 255, 255, 0.783);
+	font-size: large;
+  }
+
+  .customer-button {
+	background-color: #95f0a0;
+	color: black;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 10px 140px;
+	border-radius: 20px;
+	margin: 20px;
+  }
+
+  .vendor-button {
+	background-color: #ffce74;
+	color: black;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 10px 150px;
+	border-radius: 20px;
+	margin: 20px;
+  }
+
+  .shipper-button {
+	background-color: #fd9898;
+	color: black;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 10px 150px;
+	border-radius: 20px;
+	margin: 20px;
+  }
+
+  .customer-button:hover,
+  .vendor-button:hover,
+  .shipper-button:hover {
+	color: white;
+  }
+
+  .registration-box p,
+  .registration-box p a {
+	color: rgba(255, 255, 255, 0.783);
+	text-decoration: none;
+  }
+
+  .registration-box p a:hover {
+	text-decoration: underline;
+	color: rgba(255, 255, 255, 0.995);
+  }
+
   /* Footer Styles */
   footer {
 	background-color: #f9f9f9;

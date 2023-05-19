@@ -26,7 +26,7 @@
 	list-style: none;
   }
   
-/* Header Styles */
+  /* Header Styles */
   header {
 	position: sticky;
 	background-color: #fff;
@@ -59,49 +59,40 @@
   nav li:first-child {
 	margin-left: 0;
   }
-  	
   nav a.btn {
 	background-color: #007bff;
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 20px;
   }
-  nav a.btnl{
-	background-color: #00ff1e;
-	color: #fff;
-	padding: 10px 20px;
-	border-radius: 20px;
-  }
-  nav a.btn:hover,
-  nav a.btnl:hover{
-	opacity: 0.5;
-  }
-  
-  
-  /* Login Box Styles */
-  .login-box {
-	background-color: #f9f9f9;
-	padding: 80px 0;
-	display: flex;
-	justify-content: center;
-  }
 
-  .login-content {
-	background-color: rgb(225, 231, 236);
-	padding: 30px 50px;
+  nav a.btn:hover {
+	opacity: 0.3;
   }
   
-  .login-box h1 {
-	font-size: 2rem;
-	font-weight: 700;
-	margin-bottom: 20px;
+  /*login form*/
+  .divider:after,
+  .divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
   }
- 
-  .login-box a.btn {
-	background-color: #007bff;
-	color: #fff;
-	padding: 10px 20px;
-	border-radius: 20px;
+  .container-fluid{
+	margin-top: 50px;
+	margin-bottom: 50px;
+  }
+  .h-custom {
+  height: calc(100% - 73px);
+  }
+  .form-outline{
+	font-size: larger;
+	color: #007bff;
+  }
+  @media (max-width: 450px) {
+  .h-custom {
+  height: 100%;
+  }
   }
   
   /* Footer Styles */
@@ -111,7 +102,8 @@
 	padding-bottom: 20px;
 	text-align: center;
 	font-size: 0.8rem;
-  }
+	position: relative;
+ }
 
   footer nav {
 	display: flex;
