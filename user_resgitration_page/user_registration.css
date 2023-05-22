@@ -89,7 +89,7 @@
 	background-color: #007bff;
 	padding: 50px;
 	margin: 60px auto;
-	width: 700px;
+	width: 90%;
 	border-radius: 20px;
   }
 
@@ -97,6 +97,7 @@
 	color: white;
 	font-weight: bolder;
 	font-size: 1.4rem;
+	text-align: center;
   }
 
   .registration-box h3 {
@@ -104,40 +105,15 @@
 	font-size: large;
   }
 
-  .customer-button {
-	background-color: #95f0a0;
+  .continue-button {
+	background-color: #fdf198;
 	color: black;
 	text-decoration: none;
-	font-weight: 600;
-	padding: 10px 140px;
+	font-weight: 500;
+	padding: 5px 10px;
 	border-radius: 20px;
 	margin: 20px;
-  }
-
-  .vendor-button {
-	background-color: #ffce74;
-	color: black;
-	text-decoration: none;
-	font-weight: 600;
-	padding: 10px 150px;
-	border-radius: 20px;
-	margin: 20px;
-  }
-
-  .shipper-button {
-	background-color: #fd9898;
-	color: black;
-	text-decoration: none;
-	font-weight: 600;
-	padding: 10px 150px;
-	border-radius: 20px;
-	margin: 20px;
-  }
-
-  .customer-button:hover,
-  .vendor-button:hover,
-  .shipper-button:hover {
-	color: white;
+	cursor: pointer;
   }
 
   .registration-box p,

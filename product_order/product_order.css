@@ -1,0 +1,37 @@
+.order-details {
+    margin: auto;
+    width: 90%;
+}
+
+.order-details h2 {
+    text-align: center;
+}
+
+.order-details h3 {
+    font-size: 20px;
+}
+
+.order-details p span {
+    font-weight: 500;
+}
+
+.order-summary {
+    margin-left: 50px;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin: 20px;
+}
+
+.submit-button:hover {
+    color: black;
+}

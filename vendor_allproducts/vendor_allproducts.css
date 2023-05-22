@@ -102,6 +102,7 @@ header {
   
   .product-list {
 	display: flex;
+  	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
   }
@@ -113,6 +114,10 @@ header {
 	border: 1px solid #ddd;
 	padding: 20px;
 	transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   }
   
   .product:hover {
@@ -131,12 +136,95 @@ header {
 	margin-bottom: 10px;
   }
   
-  .product p.price {
+  .product-info {
+	text-decoration: none;
+	color: black;
+  }
+
+  .price {
 	font-size: 1.2rem;
 	font-weight: 700;
 	margin-bottom: 20px;
   }
 
+  .description {
+	font-size: small;
+  }
+
+  .vendorName {
+	font-size: 1rem;
+  }
+
+  .view-product {
+	text-decoration: none;
+	background-color: #007bff;
+	color: white;
+	width: fit-content;
+	padding: 10px;
+	border-radius: 20px;
+  }
+
+  .view-product:hover {
+	color: black;
+  }
+
+  .product form button{
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  }
+
+  .product form button:hover {
+	color: black;
+  }
+
+  .product form input{
+    width: 50%;
+    height: 20%;
+  }
+  
+
+  /* Responsive Styles */
+  @media only screen and (min-width: 601px) {
+	.vendor_form {
+	  flex-direction: row;
+	  align-items: flex-start;
+	}
+
+	.vendor_form img,
+	.vendor_form p {
+	  align-self: center;
+	}
+
+	.vendor_form form {
+	  width: auto;
+	  margin-left: 20px;
+	}
+  }
+  /* Responsive Styles */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+	/* Tablets */
+	.product {
+	  width: calc(50% - 20px);
+	}
+  }
+
+  @media only screen and (min-width: 992px) {
+	/* Desktop */
+	.product {
+	  width: calc(33.33% - 20px);
+	}
+  }
+  @media only screen and (max-width: 767px){
+	.product {
+		width: calc(85%);
+		align-self: center;
+		  }
+	.product-list{
+		justify-content: center;
+	}
+  }
   /* Footer Styles */
   footer {
 	background-color: #f9f9f9;
